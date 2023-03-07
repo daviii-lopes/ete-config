@@ -1,6 +1,7 @@
 #!/bin/bash
 
 clear
+
 echo ""
 echo "███████╗████████╗███████╗    ███╗   ███╗███████╗██╗"     
 echo "██╔════╝╚══██╔══╝██╔════╝    ████╗ ████║██╔════╝██║"     
@@ -10,14 +11,13 @@ echo "███████╗   ██║   ███████╗    ██�
 echo "╚══════╝   ╚═╝   ╚══════╝    ╚═╝     ╚═╝╚═╝     ╚══════╝"
 echo ""
 echo "--------------------------------------------------------"
-echo ""
 echo "Este é um script de instalação criado para ajudar a todos os alunos do curso de TDS da ETE Ministro Fernado Lyra!"
 echo "--------------------------------------------------------"
 echo "Preencha os campos para começar:"
 
-echo "Digite um nome de usuário: "
+echo ">>> Digite um nome de usuário: "
 read user_name
-echo "Digite um e-mail:"
+echo ">>> Digite um e-mail:"
 read email
 
 clear
@@ -29,14 +29,14 @@ echo "Finalizado!"
 
 clear
 
-echo "Agora a instalação vai acontecer sozinha, enquanto isso, vá tomar uma água, um chá ou vá brincar lá fora, isso pode demorar um pouco..."
+echo "Agora a instalação deve acontecer sozinha, enquanto isso, vá tomar uma água, um chá ou vá brincar lá fora, isso pode demorar um pouco..."
 echo "Aperte Enter para começar!"
 read
 
 clear
 
 echo "Atualizando o sistema..."
-sudo apt update
+sudo apt update -y
 sudo apt upgrade -y
 echo "Finalizado!"
 clear
@@ -61,7 +61,7 @@ mkdir Escola
 cd Escola
 echo 'Criando a pasta "Matérias"'
 mkdir Matérias
-mkdir "Base Comum Curso"
+mkdir "Base Comum" Curso
 cd "Base Comum"
 mkdir Português Matemática Filosofia Inglês Geografia História Sociologia Física "Educação física" Biologia 
 cd ..
@@ -72,7 +72,7 @@ echo "Finalizado!"
 clear
 
 echo "Instalando linguagens e programas..."
-sudo apt install python nodejs php mysql-server mysql-client libreoffice gimp -y
+sudo apt install python nodejs php mysql-server mysql-client libreoffice gimp code -y
 sudo apt install npm yarn pip -y
 
 echo "Adicionando o MySQL Workbench à área de trabalho..."
@@ -111,6 +111,18 @@ Categories=Office;WordProcessor;X-Red-Hat-Base;" > ~/Desktop/libreoffice-writer.
 
 chmod +x ~/Desktop/gimp.desktop
 chmod +x ~/Desktop/libreoffice-writer.desktop
+
+echo "Adicionando o vs code a Área de trabalho"
+
+echo '[Desktop Entry]
+Name=Visual Studio Code
+Comment=Code Editing. Redefined.
+Exec=/usr/share/code/code --no-sandbox %F
+Icon=code
+Terminal=false
+Type=Application
+Categories=Development;' > ~/Desktop/Visual\ Studio\ Code.desktop
+chmod +x ~/Desktop/Visual\ Studio\ Code.desktop
 
 echo "Finalizado!"
 
