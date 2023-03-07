@@ -1,6 +1,5 @@
 # ete-config
 Um script de pós instalação críado por mim para os meus colegas
-
 Esse script foi desenvolvido para que os meus colegas tenham uma boa primeira impressão do linux.
 
 ### O que vem incluso?
@@ -10,6 +9,10 @@ Esse script foi desenvolvido para que os meus colegas tenham uma boa primeira im
 - Instalação do LibreOffice (Pacote office gratuito para linux)
 - Instalação do Gimp
 - Instalação do VsCode
+
+### Quais os requisitos?
+- Um sistema linux baseado no Ubuntu
+- Um espaço de armazenamento de no minimo 16gb (32gb é o recomendado para ter uma boa folga)
 
 ### Como usar?
 
