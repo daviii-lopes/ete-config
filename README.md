@@ -1,5 +1,5 @@
 # ete-config
-Um script de pós instalação críado por mim para os meus colegas
+Um script de pós instalação críado por mim para os meus colegas. 
 Esse script foi desenvolvido para que os meus colegas tenham uma boa primeira impressão do linux.
 
 ### O que vem incluso?
