@@ -75,55 +75,6 @@ echo "Instalando linguagens e programas..."
 sudo apt install python nodejs php mysql-server mysql-client libreoffice gimp code -y
 sudo apt install npm yarn pip -y
 
-echo "Adicionando o MySQL Workbench à área de trabalho..."
-
-echo "[Desktop Entry]
-Version=1.0
-Name=MySQL Workbench
-Comment=Open MySQL Workbench
-Exec=mysql-workbench
-Icon=mysql-workbench
-Terminal=false
-Type=Application
-Categories=Development;" > ~/Desktop/mysql-workbench.desktop
-
-chmod +x ~/Desktop/mysql-workbench.desktop
-
-echo "Adicionando o GIMP e o LibreOffice à área de trabalho..."
-
-echo "[Desktop Entry]
-Name=GIMP
-Comment=Create images and edit photographs
-Exec=gimp-2.10 %U
-Icon=gimp
-Terminal=false
-Type=Application
-Categories=Graphics;2DGraphics;RasterGraphics;GTK;" > ~/Desktop/gimp.desktop
-
-echo "[Desktop Entry]
-Name=LibreOffice Writer
-Comment=Write documents
-Exec=libreoffice --writer %U
-Icon=libreoffice-writer
-Terminal=false
-Type=Application
-Categories=Office;WordProcessor;X-Red-Hat-Base;" > ~/Desktop/libreoffice-writer.desktop
-
-chmod +x ~/Desktop/gimp.desktop
-chmod +x ~/Desktop/libreoffice-writer.desktop
-
-echo "Adicionando o vs code a Área de trabalho"
-
-echo '[Desktop Entry]
-Name=Visual Studio Code
-Comment=Code Editing. Redefined.
-Exec=/usr/share/code/code --no-sandbox %F
-Icon=code
-Terminal=false
-Type=Application
-Categories=Development;' > ~/Desktop/Visual\ Studio\ Code.desktop
-chmod +x ~/Desktop/Visual\ Studio\ Code.desktop
-
 echo "Finalizado!"
 
 clear
