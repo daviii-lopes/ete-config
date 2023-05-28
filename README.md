@@ -12,7 +12,7 @@ Esse script foi desenvolvido para que os meus colegas tenham uma boa primeira im
 
 ### Quais os requisitos?
 - Um sistema linux baseado no Ubuntu
-- Um espaço de armazenamento de no minimo 16gb (32gb é o recomendado para ter uma boa folga)
+- Um espaço de armazenamento de no minimo 16gb (32gb é o recomendado para ter uma boa folga de armazenamento)
 
 ### Como usar?
 
